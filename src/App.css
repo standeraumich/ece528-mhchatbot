@@ -1,38 +1,69 @@
 .App {
+  font-family: Quincy CF;
+  text-align: left;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+a:link {
+  color: #ffa698;
+}
+h1{
+  color: #ffa698;
+}
+h2{
+  color: #ffa698;
+}
+
+/* visited link */
+a:visited {
+  color: #ffa698;
+}
+
+
+.header{
+  display: inline;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nonchat-components{
+  flex: 2;
+  height: 100vh;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  overflow: auto;
+  background-color: #2c2e68f1;
+  color: rgb(255, 255, 255);
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat-components{
+  flex: 3;
+  height: 100vh;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+df-messenger {
+  /* z-index: 999; */
+  bottom: 0;
+  right: 0;
+  top: 0;
+  flex-grow: 3;
+  --df-messenger-titlebar-background:  #5f62cff1;
+  --df-messenger-chat-background: #5f63cf59;
+  --df-messenger-titlebar-title-font-size: 30px;
+  --df-messenger-titlebar-title-font-family: Circular;
+  --df-messenger-titlebar-title-font-weight: 500;
+  --df-messenger-message-font-family: Circular;
+  --df-messenger-input-font-family: Circular;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-img{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
