@@ -30,7 +30,7 @@ a:visited {
 
 .nonchat-components{
   flex: 2;
-  height: 100vh;
+  height: 99vh;
   padding-top: 10px;
   padding-left: 100px;
   padding-right: 100px;
@@ -46,6 +46,8 @@ a:visited {
   text-align: left;
 }
 
+
+
 df-messenger {
   /* z-index: 999; */
   bottom: 0;
@@ -59,6 +61,8 @@ df-messenger {
   --df-messenger-titlebar-title-font-weight: 500;
   --df-messenger-message-font-family: Circular;
   --df-messenger-input-font-family: Circular;
+  --df-messenger-message-font-size: 16px;
+  --df-messenger-input-font-size: 16px;
 }
 
 .header-img{
@@ -66,4 +70,47 @@ df-messenger {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+button{
+  height: 10%;
+  position: absolute;
+  width: 200px;
+  height: 3%;
+  z-index: 999;
+  right:0;
+  margin-top: 5px;
+  margin-right: 40px;
+  background: #383970;
+  border: 1px solid #383970;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffa698;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:hover,
+button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #3d4675;
+}
+button:active {
+  opacity: .5;
 }

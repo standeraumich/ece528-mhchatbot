@@ -5,6 +5,12 @@ import OpengraphReactComponent from "opengraph-react";
 
 
 function App() {
+
+  function resetChat() {
+    const dfMessenger = document.querySelector('df-messenger');
+    dfMessenger.startNewSession({ retainHistory: false });
+  }
+
   return (
     <div className="App">
 
@@ -12,6 +18,7 @@ function App() {
         <div className='header'>
           <img src={require('./Assets/header.png')} className='header-img' alt="logo" />
         </div>
+
         <h1>Want to chat about mental health?</h1>
         <p>
           Mental health is an essential part of our overall well-being.
@@ -71,6 +78,7 @@ function App() {
         <Helmet>
           <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
         </Helmet>
+        <button onClick={resetChat}>Reset Conversation</button>
         <df-messenger
           location="us-central1"
           project-id="chatbot-mentalhealth"
@@ -80,6 +88,7 @@ function App() {
             chat-title="DearBud">
           </df-messenger-chat>
         </df-messenger>
+
       </div>
     </div>
   );
